@@ -11,6 +11,7 @@
 		5F82A7942611FAD40069EF5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F82A7932611FAD40069EF5C /* ContentView.swift */; };
 		5F82A7962611FAD70069EF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F82A7952611FAD70069EF5C /* Assets.xcassets */; };
 		5F82A7992611FAD70069EF5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F82A7982611FAD70069EF5C /* Preview Assets.xcassets */; };
+		5F82A7A32611FD140069EF5C /* Sliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F82A7A22611FD140069EF5C /* Sliders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5F82A7952611FAD70069EF5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F82A7982611FAD70069EF5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F82A79A2611FAD70069EF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F82A7A22611FD140069EF5C /* Sliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sliders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				5F82A7912611FAD40069EF5C /* Work_with_sliders_SwiftUIApp.swift */,
 				5F82A7932611FAD40069EF5C /* ContentView.swift */,
+				5F82A7A22611FD140069EF5C /* Sliders.swift */,
 				5F82A7952611FAD70069EF5C /* Assets.xcassets */,
 				5F82A79A2611FAD70069EF5C /* Info.plist */,
 				5F82A7972611FAD70069EF5C /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F82A7942611FAD40069EF5C /* ContentView.swift in Sources */,
+				5F82A7A32611FD140069EF5C /* Sliders.swift in Sources */,
 				5F82A7922611FAD40069EF5C /* Work_with_sliders_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
