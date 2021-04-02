@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct ColorSlider: View {
+    
     @Binding var value: Double
-    @Binding var newNumber: String
-    @Binding var editing: Bool
+    @State var newNumber: String = ""
+    let color: Color
     
     var body: some View {
         
         HStack(spacing: 8) {
             Text("\(lround(value))")
-            Slider(value: $value, in: 0...255, step: 1)
-            TextField(
-                "0",
-                text: $newNumber
-            )
-            { isEditing in
-                editing == editing
-                value = Double(newNumber) ?? 255
-            }
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .frame(width: 45)
+            Slider(value: $value, in: 0...255)
+                .accentColor(color)
+                .onChange(of: value, perform: { _ in
+                    newNumber = "\(lround(value))"
+                })
+            TextFieldForSlider(textValue: $newNumber, value: $value)
+        }
+        .onAppear() {
+            newNumber = "\(lround(value))"
         }
     }
 }
+

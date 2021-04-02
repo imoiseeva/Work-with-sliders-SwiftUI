@@ -9,17 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var sliderValue1 = Double.random(in: 0...255)
-    @State private var newValue1: String = ""
-    
     @State private var sliderValue2 = Double.random(in: 0...255)
-    @State private var newValue2: String = ""
-    
-    
     @State private var sliderValue3 = Double.random(in: 0...255)
-    @State private var newValue3: String = ""
-    
-    
-    @State private var isEditing = false
     
     var body: some View {
         ZStack {
@@ -30,18 +21,9 @@ struct ContentView: View {
                               green: $sliderValue2,
                               blue: $sliderValue3)
                 
-                ColorSlider(value: $sliderValue1,
-                            newNumber: $newValue1,
-                            editing: $isEditing)
-                    .accentColor(.red)
-                ColorSlider(value: $sliderValue2,
-                            newNumber: $newValue2,
-                            editing: $isEditing)
-                    .accentColor(.green)
-                ColorSlider(value: $sliderValue3,
-                            newNumber: $newValue3,
-                            editing: $isEditing)
-                    .accentColor(.blue)
+                ColorSlider(value: $sliderValue1, color: .red)
+                ColorSlider(value: $sliderValue2, color: .green)
+                ColorSlider(value: $sliderValue3, color: .blue)
                 Spacer()
             }
             .padding()
@@ -60,7 +42,6 @@ struct RectangleView: View {
     @Binding var blue: Double
     
     var body: some View {
-        
         RoundedRectangle(cornerRadius: 10, style: .continuous)
             .fill(Color(red: red/255, green: green/255, blue: blue/255))
             .frame(width: 300, height: 100)
